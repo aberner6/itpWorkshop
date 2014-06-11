@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>A Page Template for Our ITP Session!</title>
+        <script type="text/javascript" src="../js/d3.v3.js"></script>
+        <style type="text/css">
+            /* Any CSS style rules can go here */
+        </style>
+    </head>
+    <body>
+<!--         <svg width="200" height="250">
+            <circle cx="25" cy="25" r="22" fill="purple" stroke="gray" stroke-width="2"/>
+        </svg> -->
+        
+        <script type="text/javascript">
+        var myFirstWord = "hello";
+        var width=500;
+        var height=700;
+        var circleRadius=200;
+        var aNumber = 6;
+        // var 
+            // Your beautiful D3 code will go here
+            //Create SVG element
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", width)
+                        .attr("height", height);
+            svg
+                .append("circle")
+                .attr("cx", 40) 
+                .attr("cy", 50)
+                .attr("r", circleRadius)
+                .attr("fill", "purple")
+                .attr("opacity", .1);
+
+//             svg
+//                 .append("circle")
+//                 .attr("cx", 50) 
+//                 .attr("cy", 50)
+//                 .attr("r", 60)
+//                 .attr("fill", "purple")
+//                 .attr("opacity", .1);
+// ;
+
+//             svg
+//                 .append("circle")
+//                 .attr("cx", 60) 
+//                 .attr("cy", 50)
+//                 .attr("r", 10)
+//                 .attr("fill", "purple")
+//                 .attr("opacity", .1);
+
+//             svg
+//                 .append("circle")
+//                 .attr("cx", 70) 
+//                 .attr("cy", 50)
+//                 .attr("r", 5)
+//                 .attr("fill", "purple")
+//                 .attr("opacity", .1);
+        </script>
+    </body>
+</html>
