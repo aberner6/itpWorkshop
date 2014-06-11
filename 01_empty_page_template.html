@@ -3,36 +3,73 @@
     <head>
         <meta charset="utf-8">
         <title>A Page Template for Our ITP Session!</title>
-        <script type="text/javascript" src="../js/d3.v3.js"></script>
+        <script type="text/javascript" src="d3.min.js"></script>
         <style type="text/css">
             /* Any CSS style rules can go here */
         </style>
     </head>
     <body>
-<!--         <svg width="200" height="250">
-            <circle cx="25" cy="25" r="22" fill="purple" stroke="gray" stroke-width="2"/>
-        </svg> -->
-        
-        <script type="text/javascript">
-        var myFirstWord = "hello";
-        var width=500;
-        var height=700;
-        var circleRadius=200;
-        var aNumber = 6;
-        // var 
+
+
+<div class='section'>
+  First
+</div>
+<div class='section'>
+  Second
+</div>
+
+<script type="text/javascript">
+
+
+//FIRST COMMENT THIS IN
+// d3.select('.section')
+//     .text('D3 was here');
+
+
+
+
+
+
+
+
+//SECOND
+// d3.selectAll('.section')
+//     .text('D3 was here');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//THIRD
+        // var myFirstWord = "hello";
+        // var width=500;
+        // var height=700;
+        // var circleRadius=200;
+        // var aNumber = 6;
+
             // Your beautiful D3 code will go here
             //Create SVG element
-            var svg = d3.select("body")
-                        .append("svg")
-                        .attr("width", width)
-                        .attr("height", height);
-            svg
-                .append("circle")
-                .attr("cx", 40) 
-                .attr("cy", 50)
-                .attr("r", circleRadius)
-                .attr("fill", "purple")
-                .attr("opacity", .1);
+            // var svg = d3.select("body")
+            //             .append("svg")
+            //             .attr("width", width)
+            //             .attr("height", height);
+            // svg
+            //     .append("circle")
+            //     .attr("cx", 40) 
+            //     .attr("cy", 50)
+            //     .attr("r", circleRadius)
+            //     .attr("fill", "purple")
+            //     .attr("opacity", .1);
 
 //             svg
 //                 .append("circle")
@@ -58,6 +95,79 @@
 //                 .attr("r", 5)
 //                 .attr("fill", "purple")
 //                 .attr("opacity", .1);
+
+
+
+
+
+
+
+
+
+
+//FOURTH
+        // var width=500;
+        // var height=700;
+        // var leftMargin = 50;
+        // var circleRadius=[30,20,10,1,5,1];
+
+        //     // Your beautiful D3 code will go here
+        //     //Create SVG element
+        //     var svg = d3.select("body")
+        //                 .append("svg")
+        //                 .attr("width", width)
+        //                 .attr("height", height);
+        //     svg
+        //         .selectAll("circle")
+        //         .data(circleRadius)
+        //         .enter()
+        //         .append("circle")
+        //         .attr("cx", function(d,i){ return leftMargin+i*40; }) 
+        //         .attr("cy", 50)
+        //         .attr("r", function(d){return d; })
+        //         .attr("fill", "purple")
+        //         .attr("opacity", .1);
+
+
+
+
+
+
+
+//FIFTH: scales + dynamic placement!
+// var width=500;
+// var height=700;
+// var leftMargin = 50;
+// var circleRadius=[30,20,10,10,2,2,1,5,15,1];
+// // var circleRadius=[30,20,10,1,5,15,1];
+
+// var mapCircleX = d3.scale.linear()
+//     .domain([0, circleRadius.length])
+//     .range([leftMargin, width-leftMargin]);
+
+//             // Your beautiful D3 code will go here
+//             //Create SVG element
+//             var svg = d3.select("body")
+//                         .append("svg")
+//                         .attr("width", width)
+//                         .attr("height", height);
+//             svg
+//                 .selectAll("circle")
+//                 .data(circleRadius)
+//                 .enter()
+//                 .append("circle")
+//                 .attr("cx", function(d,i){ 
+//                     return mapCircleX(i);
+//                     // return leftMargin+i*40; 
+//                 }) 
+//                 .attr("cy", 50)
+//                 .attr("r", function(d){return d; })
+//                 .attr("fill", "purple")
+//                 .attr("opacity", .1);
+
+
+
+
         </script>
     </body>
 </html>
